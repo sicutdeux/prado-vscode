@@ -1,0 +1,59 @@
+{
+  "name": "prado-template",
+  "displayName": "Prado Framework Hightlight and Code Completion",
+  "description": "Syntax support for the Prado Framework.",
+  "version": "0.0.1",
+  "publisher": "sicutdeux",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "icon": "images/logo.png",
+  "galleryBanner": {
+    "color": "#293845",
+    "theme": "dark"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "prado",
+        "aliases": [
+          "Prado Framework",
+          "prado"
+        ],
+        "extensions": [
+          ".tpl",
+          ".page"
+        ],
+        "icon": {
+          "light": "./images/file-icon.png",
+          "dark": "./images/file-icon.png"
+        },
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "prado",
+        "scopeName": "text.html.basic",
+        "path": "./syntaxes/basic.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.php": "php",
+          "source.css": "css",
+          "source.js": "javascript"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "prado",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

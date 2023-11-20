@@ -1,0 +1,782 @@
+{
+	"prop": {
+		"prefix": "prop",
+		"body": "<prop:${1:PropertyName}>$0</prop:${1}>",
+		"description": "Control Prop",
+		"scope": "text.html"
+	},
+	"TAccordion": {
+		"prefix": "TAccordion",
+		"body": "<com:TAccordion ID=\"${1:accordion1}\" ActiveViewIndex=\"${2:0}\">\n\t${3:<com:TAccordionView ID=\"${4:view1}\" Caption=\"${5:caption1}\">\n\t\t${6:<!-- view1 content -->}\n\t</com:TAccordionView>\n\t<com:TAccordionView ID=\"${7:view2}\" Caption=\"${8:caption2}\">\n\t\t${9:<!-- view2 content -->}\n\t</com:TAccordionView>}$0\n</com:TAccordion>",
+		"description": "TAccordion",
+		"scope": "text.html"
+	},
+	"TAccordionView": {
+		"prefix": "TAccordionView",
+		"body": "<com:TAccordionView ID=\"${1:view1}\" Caption=\"${2:caption1}\">\n\t${0:<!-- ${1} content -->}\n</com:TAccordionView>",
+		"description": "TAccordionView",
+		"scope": "text.html"
+	},
+	"TActiveBoundColumn": {
+		"prefix": "TActiveBoundColumn",
+		"body": "<com:TActiveBoundColumn DataField=\"${2:Field Name from Data Source}\" HeaderText=\"${3:${2}}\" />$0",
+		"description": "TActiveBoundColumn",
+		"scope": "text.html"
+	},
+	"TActiveButton": {
+		"prefix": "TActiveButton",
+		"body": "<com:TActiveButton ID=\"${2:button1}\" Text=\"${3:Button 1}\" \n\tOnClick=\"${5:$2_onclick}\" OnCallback=\"${6:$2_oncallback}\" />$0",
+		"description": "TActiveButton",
+		"scope": "text.html"
+	},
+	"TActiveButtonColumn": {
+		"prefix": "TActiveButtonColumn",
+		"body": "<com:TActiveButtonColumn CommandName=\"${2:Button Command}\" Text=\"${3:Text on Button}\" HeaderText=\"${4}\" />$0",
+		"description": "TActiveButtonColumn",
+		"scope": "text.html"
+	},
+	"TActiveCheckBox": {
+		"prefix": "TActiveCheckBox",
+		"body": "<com:TActiveCheckBox ID=\"${1:checkBox1}\" Text=\"${2:CheckBox Text}\" OnCallback=\"${3:$1_oncallback}\" />$0",
+		"description": "TActiveCheckBox",
+		"scope": "text.html"
+	},
+	"TActiveCheckBoxColumn": {
+		"prefix": "TActiveCheckBoxColumn",
+		"body": "<com:TActiveCheckBoxColumn DataField=\"${2:Field Name from Data Source}\" HeaderText=\"${3:${2}}\" />$0",
+		"description": "TActiveCheckBoxColumn",
+		"scope": "text.html"
+	},
+	"TActiveClientScript": {
+		"prefix": "TActiveClientScript",
+		"body": "<com:TActiveClientScript ScriptUrl=\"${1:<%~ ${2:script.js} %>}\" />$0",
+		"description": "TActiveClientScript",
+		"scope": "text.html"
+	},
+	"TActiveCustomValidator": {
+		"prefix": "TActiveCustomValidator",
+		"body": "<com:TActiveCustomValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\tOnCallback=\"${2:validator_oncallback}\"\n\tOnServerValidate=\"${3:customValidate}\"${4:\n\tClientValidationFunction=\"${5:clientSideCustomValidate}\"}\n\tErrorMessage=\"${6:required}\" />$0",
+		"description": "TActiveCustomValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TActiveDataGrid": {
+		"prefix": "TActiveDataGrid",
+		"body": "<com:TActiveDataGrid ID=\"${1:grid1}\" AutoGenerateColumns=\"${2:true}\">\n\t$0\n</com:TActiveDataGrid>",
+		"description": "TActiveDataGrid",
+		"scope": "text.html"
+	},
+	"TActiveDataList": {
+		"prefix": "TActiveDataList",
+		"body": "<com:TActiveDataList ID=\"${1:list1}\" >\n\t$0\n</com:TActiveDataList>",
+		"description": "TActiveDataList",
+		"scope": "text.html"
+	},
+	"TActiveDatePicker": {
+		"prefix": "TActiveDatePicker",
+		"body": "<com:TActiveDatePicker ID=\"${1:datePicker1}\" onCallback=\"${2:$1_oncallback}\" DateFormat=\"${3:dd/MM/yyyy}\" ${4:InputMode=\"${5:DropDownList}\"} />$0",
+		"description": "TActiveDatePicker",
+		"scope": "text.html"
+	},
+	"TActiveDropDownList": {
+		"prefix": "TActiveDropDownList",
+		"body": "<com:TActiveDropDownList ID=\"${1:dropDownList1}\" OnCallback=\"${2:$1_oncallback}\">\n\t${3:<com:TListItem Value=\"${4:value 1}\" Text=\"${5:item 1}\" />\n\t<com:TListItem Value=\"${6:value 2}\" Text=\"${7:item 2}\" />}$0\n</com:TActiveDropDownList>",
+		"description": "TActiveDropDownList",
+		"scope": "text.html"
+	},
+	"TActiveDropDownListColumn": {
+		"prefix": "TActiveDropDownListColumn",
+		"body": "<com:TActiveDropDownListColumn DataTextField=\"${2:Field Name from Data Source}\" DataValueField=\"${3:Field Name from Data Source}\" HeaderText=\"${4:Dropdown}\" />$0",
+		"description": "TActiveDropDownListColumn",
+		"scope": "text.html"
+	},
+	"TActiveEditCommandColumn": {
+		"prefix": "TActiveEditCommandColumn",
+		"body": "<com:TActiveEditCommandColumn ButtonType=\"${1:LinkButton}\" EditText=\"${2:Edit}\" UpdateText=\"${3:Update}\" CancelText=\"${4:Cancel}\" />$0",
+		"description": "TActiveEditCommandColumn",
+		"scope": "text.html"
+	},
+	"TActiveFileUpload": {
+		"prefix": "TActiveFileUpload",
+		"body": "<com:TActiveFileUpload ID=\"${1:file1}\" OnFileUpload=\"${2:${1}_Uploaded}\" />$0",
+		"description": "TActiveFileUpload",
+		"scope": "text.html"
+	},
+	"TActiveHiddenField": {
+		"prefix": "TActiveHiddenField",
+		"body": "<com:TActiveHiddenField ID=\"${1:hiddenField1}\" Value=\"${2:value}\" />$0",
+		"description": "TActiveHiddenField",
+		"scope": "text.html"
+	},
+	"TActiveHyperLink": {
+		"prefix": "TActiveHyperLink",
+		"body": "<com:TActiveHyperLink NavigateUrl=\"${1:https://github.com/pradosoft/prado}\" Text=\"${2:Prado framework}\" />$0",
+		"description": "TActiveHyperLink",
+		"scope": "text.html"
+	},
+	"TActiveImage": {
+		"prefix": "TActiveImage",
+		"body": "<com:TActiveImage ImageUrl=<%~ ${1:hello_world.gif} %> AlternateText=\"${1}\" />$0",
+		"description": "TActiveImage",
+		"scope": "text.html"
+	},
+	"TActiveImageButton": {
+		"prefix": "TActiveImageButton",
+		"body": "<com:TActiveImageButton\n\tID=\"${1:imageButton1}\"\n\tImageUrl=<%~ ${2:hello_world.gif} %>\n\tText=\"${3:hello world}\"\n\tOnClick=\"${4:${1}_Clicked}\" \n\tOnCallback=\"${5:${1}_oncallback}\" \n/>$0",
+		"description": "TActiveImageButton",
+		"scope": "text.html"
+	},
+	"TActiveLabel": {
+		"prefix": "TActiveLabel",
+		"body": "<com:TActiveLabel ID=\"${1:label1}\" ${2:Text=\"${3:Label 1}\"} />$0",
+		"description": "TActiveLabel",
+		"scope": "text.html"
+	},
+	"TActiveLinkButton": {
+		"prefix": "TActiveLinkButton",
+		"body": "<com:TActiveLinkButton\n\tID=\"${1:linkButton1}\"\n\tText=\"${2:Click Me}\"\n\tOnClick=\"${3:${1}_Clicked}\"\n\tOnCallback=\"${3:${1}_oncallback}\"\n/>$0",
+		"description": "TActiveLinkButton",
+		"scope": "text.html"
+	},
+	"TActiveListBox": {
+		"prefix": "TActiveListBox",
+		"body": "<com:TActiveListBox ID=\"${1:listBox1}\">\n\t${2:<com:TListItem Value=\"${3:value 1}\" Text=\"${4:item 1}\" />\n\t<com:TListItem Value=\"${5:value 2}\" Text=\"${6:item 2}\" />}$0\n</com:TActiveListBox>",
+		"description": "TActiveListBox",
+		"scope": "text.html"
+	},
+	"TActiveLiteralColumn": {
+		"prefix": "TActiveLiteralColumn",
+		"body": "<com:TActiveLiteralColumn DataField=\"${2:Field Name from Data Source}\" HeaderText=\"${3:${2}}\" />$0",
+		"description": "TActiveLiteralColumn",
+		"scope": "text.html"
+	},
+	"TActiveMultiView": {
+		"prefix": "TActiveMultiView",
+		"body": "<com:TActiveMultiView ID=\"${1:multiView1}\" ActiveViewIndex=\"${2:0}\">\n\t${3:<com:TView ID=\"${4:view1}\">\n\t\t${5:<!-- view1 content -->}\n\t</com:TView>\n\t<com:TView ID=\"${6:view2}\">\n\t\t${7:<!-- view2 content -->}\n\t</com:TView>}$0\n</com:TActiveMultiView>",
+		"description": "TActiveMultiView",
+		"scope": "text.html"
+	},
+	"TActivePager": {
+		"prefix": "TActivePager",
+		"body": "<com:TActivePager\n\tControlToPaginate=\"${2:dataGrid1}\"\n\tOnPageIndexChanged=\"${3:pagerIndexChanged}\"\n\tOnCallback=\"${4:pagerCallback}\"\n/>$0",
+		"description": "TActivePager",
+		"scope": "text.html"
+	},
+	"TActivePanel": {
+		"prefix": "TActivePanel",
+		"body": "<com:TActivePanel ID=\"${1:panel1}\">\n\t$0\n</com:TActivePanel>",
+		"description": "TActivePanel",
+		"scope": "text.html"
+	},
+	"TActiveRadioButton": {
+		"prefix": "TActiveRadioButton",
+		"body": "<com:TActiveRadioButton\n\tID=\"${1:radioButton1}\"\n\tText=\"${2:RadioButton Text}\"\n\tOnCallback=\"${3:$1_oncallback}\"\n/>$0",
+		"description": "TActiveRadioButton",
+		"scope": "text.html"
+	},
+	"TActiveRadioButtonList": {
+		"prefix": "TActiveRadioButtonList",
+		"body": "<com:TActiveRadioButtonList ID=\"${1:radioButtonList1}\" OnCallback=\"${3:$1_oncallback}\">\n\t${2:<com:TListItem Value=\"${3:value 1}\" Text=\"${4:item 1}\" />\n\t<com:TListItem Value=\"${5:value 2}\" Text=\"${6:item 2}\" />}$0\n</com:TActiveRadioButtonList>",
+		"description": "TActiveRadioButtonList",
+		"scope": "text.html"
+	},
+	"TActiveRatingList": {
+		"prefix": "TActiveRatingList",
+		"body": "<com:TActiveRatingList ID=\"${1:ratingList1}\" OnCallback=\"${3:$1_oncallback}\" />$0",
+		"description": "TActiveRatingList",
+		"scope": "text.html"
+	},
+	"TActiveRepeater": {
+		"prefix": "TActiveRepeater",
+		"body": "<com:TActiveRepeater ID=\"${1:repeater1}\" DataKeys=\"${2:Data key field}\">\n\t<prop:EmptyTemplate>\n\t\t${3:<!-- content -->}\n\t</prop:EmptyTemplate>\n\t<prop:HeaderTemplate>\n\t\t${4:<!-- content -->}\n\t</prop:HeaderTemplate>\n\t<prop:ItemTemplate>\n\t\t${5:<!-- content -->}\n\t</prop:ItemTemplate>\n\t<prop:FooterTemplate>\n\t\t${6:<!-- content -->}\n\t</prop:FooterTemplate>\n</com:TActiveRepeater>",
+		"description": "TActiveRepeater",
+		"scope": "text.html"
+	},
+	"TActiveTableCell": {
+		"prefix": "TActiveTableCell",
+		"body": "<com:TActiveTableCell>${1:cell 1}</com:TActiveTableCell>$0",
+		"description": "TActiveTableCell",
+		"scope": "text.html"
+	},
+	"TActiveTableRow": {
+		"prefix": "TActiveTableRow",
+		"body": "<com:TActiveTableRow>\n\t${1:<com:TActiveTableCell>${2:cell 1}</com:TActiveTableCell>\n\t<com:TActiveTableCell>${3:cell 2}</com:TActiveTableCell>}$0\n</com:TActiveTableRow>",
+		"description": "TActiveTableRow",
+		"scope": "text.html"
+	},
+	"TActiveTextBox": {
+		"prefix": "TActiveTextBox",
+		"body": "<com:TActiveTextBox ID=\"${1:textbox1}\" />$0",
+		"description": "TActiveTextBox",
+		"scope": "text.html"
+	},
+	"TAutoComplete": {
+		"prefix": "TAutoComplete",
+		"body": "<com:TAutoComplete\n\tID=\"${1:textbox1}\"\n    OnSuggest=\"${2:$1_suggestNames}\"\n    OnSuggestionSelected=\"${3:$1_suggestionSelected1}\"\n    ResultPanel.CssClass=\"${4:acomplete}\"\n    Suggestions.DataKeyField=\"${5:id}\"\n>\n    <prop:Suggestions.ItemTemplate>\n    <li><%# ${6:\\$this->Data['name']} %></li>\n    </prop:Suggestions.ItemTemplate>\n</com:TAutoComplete>$0",
+		"description": "TAutoComplete",
+		"scope": "text.html"
+	},
+	"TBoundColumn": {
+		"prefix": "TBoundColumn",
+		"body": "<com:TBoundColumn DataField=\"${2:Field Name from Data Source}\" HeaderText=\"${3:${2}}\" />$0",
+		"description": "TBoundColumn",
+		"scope": "text.html"
+	},
+	"TBulletedList": {
+		"prefix": "TBulletedList",
+		"body": "<com:TBulletedList ID=\"${1:bulletedList1}\">\n\t${2:<com:TListItem Value=\"${3:value 1}\" Text=\"${4:item 1}\" />\n\t<com:TListItem Value=\"${5:value 2}\" Text=\"${6:item 2}\" />}$0\n</com:TBulletedList>",
+		"description": "TBulletedList",
+		"scope": "text.html"
+	},
+	"TButton": {
+		"prefix": "TButton",
+		"body": "<com:TButton ID=\"${1:button1}\" Text=\"${2:Button Text}\" OnClick=\"${3:${1}_Clicked}\" />$0",
+		"description": "TButton",
+		"scope": "text.html"
+	},
+	"TButtonColumn": {
+		"prefix": "TButtonColumn",
+		"body": "<com:TButtonColumn CommandName=\"${2:Button Command}\" Text=\"${3:Text on Button}\" HeaderText=\"${4}\" />$0",
+		"description": "TButtonColumn",
+		"scope": "text.html"
+	},
+	"TCallback": {
+		"prefix": "TCallback",
+		"body": "<com:TCallback ID=\"${1:callback1}\" OnCallback=\"${2:$1_oncallback}\" />\n<script type=\"text/javascript\">\n\tfunction do_callback1()\n\t{\n\t\tvar request = <%= $this->${3:$1}->ActiveControl->Javascript %>;\n\t\trequest.dispatch();\n\t}\n</script>",
+		"description": "TCallback",
+		"scope": "text.html"
+	},
+	"TCaptcha": {
+		"prefix": "TCaptcha",
+		"body": "<com:TCaptcha ID=\"${1:captcha1}\" />\n<com:TTextBox ID=\"${1}input\" />\n<com:TCaptchaValidator CaptchaControl=\"${1}\" ControlToValidate=\"${1}input\" ErrorMessage=\"${2:You are challenged!}\" />$0",
+		"description": "TCaptcha",
+		"scope": "text.html"
+	},
+	"TValidator": {
+		"prefix": "TValidator",
+		"body": "<com:TCaptchaValidator\n\tCaptchaControl=\"${1:captchaControl}\"\n\tControlToValidate=\"${2:controlIDToValidate}\"\n\tErrorMessage=\"${3:You are challenged!}\" />$0",
+		"description": "TCaptchaValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TCheckBox": {
+		"prefix": "TCheckBox",
+		"body": "<com:TCheckBox ID=\"${1:checkBox1}\" Text=\"${2:CheckBox Text}\" />$0",
+		"description": "TCheckBox",
+		"scope": "text.html"
+	},
+	"TCheckBoxColumn": {
+		"prefix": "TCheckBoxColumn",
+		"body": "<com:TCheckBoxColumn DataField=\"${2:Field Name from Data Source}\" HeaderText=\"${3:${2}}\" />$0",
+		"description": "TCheckBoxColumn",
+		"scope": "text.html"
+	},
+	"TCheckBoxList": {
+		"prefix": "TCheckBoxList",
+		"body": "<com:TCheckBoxList ID=\"${1:checkBoxList1}\">\n\t${2:<com:TListItem Value=\"${3:value 1}\" Text=\"${4:item 1}\" />\n\t<com:TListItem Value=\"${5:value 2}\" Text=\"${6:item 2}\" />}$0\n</com:TCheckBoxList>",
+		"description": "TCheckBoxList",
+		"scope": "text.html"
+	},
+	"THotSpot": {
+		"prefix": "THotSpot",
+		"body": "<com:TTCircleHotSpot\n\t${1:HotspotMode=\"${2:Navigate}\"\n\tNavigateUrl=\"${3:https://github.com/pradosoft/prado}\"}\n\tAlternateText=\"${4:Navigate to Prado framework}\"\n\tX=\"${5:80}\" Y=\"${6:80}\" Radius=\"${7:55}\" />$0",
+		"description": "TCircleHotSpot (THotSpot)",
+		"scope": "text.html"
+	},
+	"TClientScript": {
+		"prefix": "TClientScript",
+		"body": "<com:TClientScript ScriptUrl=\"${1:<%~ ${2:script.js} %>}\" />$0",
+		"description": "TClientScript",
+		"scope": "text.html"
+	},
+	"TColorPicker": {
+		"prefix": "TColorPicker",
+		"body": "<com:TColorPicker ID=\"${1:colorpicker1}\" Mode=\"${2:Basic}\" />$0",
+		"description": "TColorPicker",
+		"scope": "text.html"
+	},
+	"TValidator1": {
+		"prefix": "TValidator",
+		"body": "<com:TCompareValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\t${2:ControlToCompare=\"${3:controlIDToCompareWith}\"\n\tDataType=\"${4:String}\"\n\tOperator=\"${5:Equal}\"}\n\tErrorMessage=\"${6:value did not match}\" />$0",
+		"description": "TCompareValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TConditional": {
+		"prefix": "TConditional",
+		"body": "<com:TConditional Condition=\"${1:\\$this->User->IsGuest}\" >\n\t<prop:TrueTemplate>\n\t\t$0\n\t</prop:TrueTemplate>\n\t<prop:FalseTemplate>\n\t</prop:FalseTemplate>\n</com:TConditional>",
+		"description": "TConditional",
+		"scope": "text.html"
+	},
+	"TContent": {
+		"prefix": "TContent",
+		"body": "<com:TContent ID=\"${1:Content}\">\n\t$0\n</com:TContent>",
+		"description": "TContent",
+		"scope": "text.html"
+	},
+	"TContentPlaceHolder": {
+		"prefix": "TContentPlaceHolder",
+		"body": "<com:TContentPlaceHolder ID=\"${1:Content}\" />$0",
+		"description": "TContentPlaceHolder",
+		"scope": "text.html"
+	},
+	"TValidator2": {
+		"prefix": "TValidator",
+		"body": "<com:TCustomValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\tOnServerValidate=\"${2:customValidate}\"${3:\n\tClientValidationFunction=\"${4:clientSideCustomValidate}\"}\n\tErrorMessage=\"${6:required}\" />$0",
+		"description": "TCustomValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TDataGrid": {
+		"prefix": "TDataGrid",
+		"body": "<com:TDataGrid ID=\"${1:grid1}\" AutoGenerateColumns=\"${2:true}\">\n\t$0\n</com:TDataGrid>",
+		"description": "TDataGrid",
+		"scope": "text.html"
+	},
+	"TDataList": {
+		"prefix": "TDataList",
+		"body": "<com:TDataList ID=\"${1:list1}\" >\n\t$0\n</com:TDataList>",
+		"description": "TDataList",
+		"scope": "text.html"
+	},
+	"TDatePicker": {
+		"prefix": "TDatePicker",
+		"body": "<com:TDatePicker ID=\"${1:datePicker1}\" DateFormat=\"${2:dd/MM/yyyy}\" ${3:InputMode=\"${4:DropDownList}\"} />$0",
+		"description": "TDatePicker",
+		"scope": "text.html"
+	},
+	"TDraggable": {
+		"prefix": "TDraggable",
+		"body": "<com:TDraggable Handle=\"${1:idOrClass}\" Revert=\"${2:false}\" Ghosting=\"${3:false}\" />$0",
+		"description": "TDraggable",
+		"scope": "text.html"
+	},
+	"TDropContainer": {
+		"prefix": "TDropContainer",
+		"body": "<com:TDropContainer\n\tCssClass=\"${1:cart}\"\n\tID=\"${2:cart}\"\n\tAcceptCssClass=\"${3:draggable}\" \n\tHoverCssClass=\"${4:cart-hover}\"\n\tOnDrop=\"${5:addItemToCart}\"\n\tOnCallback=\"${6:redrawCart}\"\n>\n<!-- content -->\n</com:TDropContainer>",
+		"description": "TDropContainer",
+		"scope": "text.html"
+	},
+	"TDropDownList": {
+		"prefix": "TDropDownList",
+		"body": "<com:TDropDownList ID=\"${1:dropDownList1}\">\n\t${2:<com:TListItem Value=\"${3:value 1}\" Text=\"${4:item 1}\" />\n\t<com:TListItem Value=\"${5:value 2}\" Text=\"${6:item 2}\" />}$0\n</com:TDropDownList>",
+		"description": "TDropDownList",
+		"scope": "text.html"
+	},
+	"TDropDownListColumn": {
+		"prefix": "TDropDownListColumn",
+		"body": "<com:TDropDownListColumn DataTextField=\"${2:Field Name from Data Source}\" DataValueField=\"${3:Field Name from Data Source}\" HeaderText=\"${4:Dropdown}\" />$0",
+		"description": "TDropDownListColumn",
+		"scope": "text.html"
+	},
+	"TEditCommandColumn": {
+		"prefix": "TEditCommandColumn",
+		"body": "<com:TEditCommandColumn ButtonType=\"${1:LinkButton}\" EditText=\"${2:Edit}\" UpdateText=\"${3:Update}\" CancelText=\"${4:Cancel}\" />$0",
+		"description": "TEditCommandColumn",
+		"scope": "text.html"
+	},
+	"TValidator3": {
+		"prefix": "TValidator",
+		"body": "<com:TEmailAddressValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\tErrorMessage=\"${2:email address required}\" />$0",
+		"description": "TEmailAddressValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TEventTriggeredCallback": {
+		"prefix": "TEventTriggeredCallback",
+		"body": "<com:TEventTriggeredCallback ControlID=\"${1:ControlID}\" EventName=\"${2:focus}\" OnCallback=\"${3:event_callback}\" />",
+		"description": "TEventTriggeredCallback",
+		"scope": "text.html"
+	},
+	"TExpression": {
+		"prefix": "TExpression",
+		"body": "<com:TExpression Expression=\"${1:\\$this->Page->Title}\" />$0",
+		"description": "TExpression",
+		"scope": "text.html"
+	},
+	"TFileUpload": {
+		"prefix": "TFileUpload",
+		"body": "<com:TFileUpload ID=\"${1:file1}\" OnFileUpload=\"${2:${1}_Uploaded}\" />$0",
+		"description": "TFileUpload",
+		"scope": "text.html"
+	},
+	"TFlushOutput": {
+		"prefix": "TFlushOutput",
+		"body": "<com:TFlushOutput ID=\"${1:flushOutput1}\" />$0",
+		"description": "TFlushOutput",
+		"scope": "text.html"
+	},
+	"TForm": {
+		"prefix": "TForm",
+		"body": "<com:TForm ${1:ID=\"${2:form1}\"}>\n\t$0\n</com:TForm>",
+		"description": "TForm",
+		"scope": "text.html"
+	},
+	"THead": {
+		"prefix": "THead",
+		"body": "<com:THead Title=\"${1:title1}\" >\n\t${2:<com:TMetaTag HttpEquiv=\"${3:Pragma}\" Content=\"${4:no-cache}\" />\n\t<com:TMetaTag Name=\"${5:keywords}\" Content=\"${6:Prado}\" />}$0\n</com:THead>",
+		"description": "THead",
+		"scope": "text.html"
+	},
+	"THeader1": {
+		"prefix": "THeader1",
+		"body": "<com:THeader1 />$0",
+		"description": "THeader1",
+		"scope": "text.html"
+	},
+	"THeader2": {
+		"prefix": "THeader2",
+		"body": "<com:THeader2 />$0",
+		"description": "THeader2",
+		"scope": "text.html"
+	},
+	"THeader3": {
+		"prefix": "THeader3",
+		"body": "<com:THeader3 />$0",
+		"description": "THeader3",
+		"scope": "text.html"
+	},
+	"THeader4": {
+		"prefix": "THeader4",
+		"body": "<com:THeader4 />$0",
+		"description": "THeader4",
+		"scope": "text.html"
+	},
+	"THeader5": {
+		"prefix": "THeader5",
+		"body": "<com:THeader5 />$0",
+		"description": "THeader5",
+		"scope": "text.html"
+	},
+	"THeader6": {
+		"prefix": "THeader6",
+		"body": "<com:THeader6 />$0",
+		"description": "THeader6",
+		"scope": "text.html"
+	},
+	"THiddenField": {
+		"prefix": "THiddenField",
+		"body": "<com:THiddenField ID=\"${1:hiddenField1}\" Value=\"${2:value}\" />$0",
+		"description": "THiddenField",
+		"scope": "text.html"
+	},
+	"THtmlArea": {
+		"prefix": "THtmlArea",
+		"body": "<com:THtmlArea ID=\"${1:htmlArea1}\" Width=\"${2:500px}\" Height=\"${3:250px}\" />$0",
+		"description": "THtmlArea",
+		"scope": "text.html"
+	},
+	"THyperLink": {
+		"prefix": "THyperLink",
+		"body": "<com:THyperLink NavigateUrl=\"${1:https://github.com/pradosoft/prado}\" Text=\"${2:Prado framework}\" />$0",
+		"description": "THyperLink",
+		"scope": "text.html"
+	},
+	"TImage": {
+		"prefix": "TImage",
+		"body": "<com:TImage ImageUrl=<%~ ${1:hello_world.gif} %> AlternateText=\"${1}\" />$0",
+		"description": "TImage",
+		"scope": "text.html"
+	},
+	"TImageButton": {
+		"prefix": "TImageButton",
+		"body": "<com:TImageButton\n\tID=\"${1:imageButton1}\"\n\tImageUrl=<%~ ${2:hello_world.gif} %>\n\tText=\"${3:hello world}\"\n\tOnClick=\"${4:${1}_Clicked}\" />$0",
+		"description": "TImageButton",
+		"scope": "text.html"
+	},
+	"TImageMap": {
+		"prefix": "TImageMap",
+		"body": "<com:TImageMap\n\tID=\"${1:imageMap1}\"\n\tImageUrl=<%~ ${2:hotspots.gif} %>\n\tAlternateText=\"${3:${1}}\"\n\tOnClick=\"${4:${1}_Clicked}\">\n${5:<com:TTCircleHotSpot\n\t${6:HotspotMode=\"${7:Navigate}\"\n\tNavigateUrl=\"${8:https://github.com/pradosoft/prado}\"}\n\tAlternateText=\"${9:Navigate to Prado framework}\"\n\tX=\"${10:80}\" Y=\"${11:80}\" Radius=\"${12:55}\" />}$0\n</com:TImageMap>",
+		"description": "TImageMap",
+		"scope": "text.html"
+	},
+	"TInPlaceTextBox": {
+		"prefix": "TInPlaceTextBox",
+		"body": "<com:TInPlaceTextBox ID=\"${1:textbox1}\" Text=\"${2:text}\" OnTextChanged=\"${3:textChanged}\"/>$0",
+		"description": "TInPlaceTextBox",
+		"scope": "text.html"
+	},
+	"TInlineFrame": {
+		"prefix": "TInlineFrame",
+		"body": "<com:TInlineFrame FrameUrl=\"${1:http://www.google.com/}\" />$0",
+		"description": "TInlineFrame",
+		"scope": "text.html"
+	},
+	"TJavascriptLogger": {
+		"prefix": "TJavascriptLogger",
+		"body": "<com:TJavascriptLogger />$0",
+		"description": "TJavascriptLogger",
+		"scope": "text.html"
+	},
+	"TKeyboard": {
+		"prefix": "TKeyboard",
+		"body": "<com:TKeyboard ForControl=\"${1:PasswordInput}\" />$0",
+		"description": "TKeyboard",
+		"scope": "text.html"
+	},
+	"TLabel": {
+		"prefix": "TLabel",
+		"body": "<com:TLabel ID=\"${1:label1}\" ${2:Text=\"${3:Label 1}\"} />$0",
+		"description": "TLabel",
+		"scope": "text.html"
+	},
+	"TLinkButton": {
+		"prefix": "TLinkButton",
+		"body": "<com:TLinkButton ID=\"${1:linkButton1}\" Text=\"${2:Click Me}\" OnClick=\"${3:${1}_Clicked}\" />$0",
+		"description": "TLinkButton",
+		"scope": "text.html"
+	},
+	"TListBox": {
+		"prefix": "TListBox",
+		"body": "<com:TListBox ID=\"${1:listBox1}\">\n\t${2:<com:TListItem Value=\"${3:value 1}\" Text=\"${4:item 1}\" />\n\t<com:TListItem Value=\"${5:value 2}\" Text=\"${6:item 2}\" />}$0\n</com:TListBox>",
+		"description": "TListBox",
+		"scope": "text.html"
+	},
+	"TValidator4": {
+		"prefix": "TValidator",
+		"body": "<com:TListControlValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\tMinSelection=\"${2:2}\"${3:\n\tRequiredSelection=\"${4:value1}\"}\n\tErrorMessage=\"${6:selection required}\" />$0",
+		"description": "TListControlValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TListItem": {
+		"prefix": "TListItem",
+		"body": "<com:TListItem Value=\"${1:value 1}\" Text=\"${2:item 1}\" />$0",
+		"description": "TListItem",
+		"scope": "text.html"
+	},
+	"TLiteral": {
+		"prefix": "TLiteral",
+		"body": "<com:TLiteral ID=\"${1:label1}\" ${2:Text=\"${3:Label 1}\"} ${4:Encode=\"${5:true}\"} />$0",
+		"description": "TLiteral",
+		"scope": "text.html"
+	},
+	"TLiteralColumn": {
+		"prefix": "TLiteralColumn",
+		"body": "<com:TLiteralColumn DataField=\"${2:Field Name from Data Source}\" HeaderText=\"${3:${2}}\" />$0",
+		"description": "TLiteralColumn",
+		"scope": "text.html"
+	},
+	"TMarkdown": {
+		"prefix": "TMarkdown",
+		"body": "<com:TMarkdown>\n\t${0:<!-- content -->}\n</com:TMarkdown>",
+		"description": "TMarkdown",
+		"scope": "text.html"
+	},
+	"TMetaTag": {
+		"prefix": "TMetaTag",
+		"body": "<com:TMetaTag Name=\"${1:keywords}\" Content=\"${2:Prado}\" />",
+		"description": "TMetaTag",
+		"scope": "text.html"
+	},
+	"TMultiView": {
+		"prefix": "TMultiView",
+		"body": "<com:TMultiView ID=\"${1:multiView1}\" ActiveViewIndex=\"${2:0}\">\n\t${3:<com:TView ID=\"${4:view1}\">\n\t\t${5:<!-- view1 content -->}\n\t</com:TView>\n\t<com:TView ID=\"${6:view2}\">\n\t\t${7:<!-- view2 content -->}\n\t</com:TView>}$0\n</com:TMultiView>",
+		"description": "TMultiView",
+		"scope": "text.html"
+	},
+	"TOutputCache": {
+		"prefix": "TOutputCache",
+		"body": "<com:TOutputCache>\n\t${0:<!-- content to be cached-->}\n</com:TOutputCache>",
+		"description": "TOutputCache",
+		"scope": "text.html"
+	},
+	"TPager": {
+		"prefix": "TPager",
+		"body": "<com:TPager ControlToPaginate=\"${2:dataGrid1}\" OnPageIndexChanged=\"${3:pagerIndexChanged}\" />$0",
+		"description": "TPager",
+		"scope": "text.html"
+	},
+	"TPanel": {
+		"prefix": "TPanel",
+		"body": "<com:TPanel ID=\"${1:panel1}\">\n\t$0\n</com:TPanel>",
+		"description": "TPanel",
+		"scope": "text.html"
+	},
+	"TPlaceHolder": {
+		"prefix": "TPlaceHolder",
+		"body": "<com:TPlaceHolder ID=\"${1:placeHolder1}\" />$0",
+		"description": "TPlaceHolder",
+		"scope": "text.html"
+	},
+	"THotSpot1": {
+		"prefix": "THotSpot",
+		"body": "<com:TPolygonHotSpot\n\t${1:HotspotMode=\"${2:Navigate}\"\n\tNavigateUrl=\"${3:https://github.com/pradosoft/prado}\"}\n\tAlternateText=\"${4:Navigate to Prado framework}\"\n\tCoordinates=\"${5:200,137,255}\" />$0",
+		"description": "TPolygonHotSpot (THotSpot)",
+		"scope": "text.html"
+	},
+	"TRadioButton": {
+		"prefix": "TRadioButton",
+		"body": "<com:TRadioButton ID=\"${1:radioButton1}\" Text=\"${2:RadioButton Text}\" />$0",
+		"description": "TRadioButton",
+		"scope": "text.html"
+	},
+	"TRadioButtonList": {
+		"prefix": "TRadioButtonList",
+		"body": "<com:TRadioButtonList ID=\"${1:radioButtonList1}\">\n\t${2:<com:TListItem Value=\"${3:value 1}\" Text=\"${4:item 1}\" />\n\t<com:TListItem Value=\"${5:value 2}\" Text=\"${6:item 2}\" />}$0\n</com:TRadioButtonList>",
+		"description": "TRadioButtonList",
+		"scope": "text.html"
+	},
+	"TValidator5": {
+		"prefix": "TValidator",
+		"body": "<com:TRangeValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\tDataType=\"${2:Integer}\"\t\n\t${3:MinValue=\"${4:2}\"}\n\t${5:MaxValue=\"${6:5}\"}\n\tErrorMessage=\"${7:out of range}\" />$0",
+		"description": "TRangeValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TRatingList": {
+		"prefix": "TRatingList",
+		"body": "<com:TRatingList ID=\"${1:ratingList1}\" />$0",
+		"description": "TRatingList",
+		"scope": "text.html"
+	},
+	"TReCaptcha": {
+		"prefix": "TReCaptcha",
+		"body": "<com:TReCaptcha ID=\"${1:captcha1}\" />\n<com:TTextBox ID=\"${1}input\" />\n<com:TReCaptchaValidator CaptchaControl=\"${1}\" ControlToValidate=\"${1}input\" ErrorMessage=\"${2:You are challenged!}\" />$0",
+		"description": "TReCaptcha",
+		"scope": "text.html"
+	},
+	"TValidator6": {
+		"prefix": "TValidator",
+		"body": "<com:TReCaptchaValidator\n\tCaptchaControl=\"${1:captchaControl}\"\n\tControlToValidate=\"${2:controlIDToValidate}\"\n\tErrorMessage=\"${3:You are challenged!}\" />$0",
+		"description": "TReCaptchaValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"THotSpot2": {
+		"prefix": "THotSpot",
+		"body": "<com:TRectangleHotSpot\n\t${1:HotspotMode=\"${2:Navigate}\"\n\tNavigateUrl=\"${3:https://github.com/pradosoft/prado}\"}\n\tAlternateText=\"${4:Navigate to Prado framework}\"\n\tTop=\"${5:10}\" Left=\"${6:10}\" Bottom=\"${7:110}\" Right=\"${8:110}\" />$0",
+		"description": "TRectangleHotSpot (THotSpot)",
+		"scope": "text.html"
+	},
+	"TValidator7": {
+		"prefix": "TValidator",
+		"body": "<com:TRegularExpressionValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\tRegularExpression=\"${2:\\w{5,\\}}\"\n\tErrorMessage=\"${7:mismatch}\" />$0",
+		"description": "TRegularExpressionValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TRepeater": {
+		"prefix": "TRepeater",
+		"body": "<com:TRepeater ID=\"${1:repeater1}\" DataKeyField=\"${2:Data key field}\">\n\t<prop:EmptyTemplate>\n\t\t${3:<!-- content -->}\n\t</prop:EmptyTemplate>\n\t<prop:HeaderTemplate>\n\t\t${4:<!-- content -->}\n\t</prop:HeaderTemplate>\n\t<prop:ItemTemplate>\n\t\t${5:<!-- content -->}\n\t</prop:ItemTemplate>\n\t<prop:FooterTemplate>\n\t\t${6:<!-- content -->}\n\t</prop:FooterTemplate>\n</com:TRepeater>",
+		"description": "TRepeater",
+		"scope": "text.html"
+	},
+	"TValidator8": {
+		"prefix": "TValidator",
+		"body": "<com:TRequiredFieldValidator\n\tControlToValidate=\"${1:controlIDToValidate}\"\n\tErrorMessage=\"${2:required}\" />$0",
+		"description": "TRequiredFieldValidator (TValidator)",
+		"scope": "text.html"
+	},
+	"TSafeHtml": {
+		"prefix": "TSafeHtml",
+		"body": "<com:TSafeHtml>\n\t${0:<!-- content -->}\n</com:TSafeHtml>",
+		"description": "TSafeHtml",
+		"scope": "text.html"
+	},
+	"TSlider": {
+		"prefix": "TSlider",
+		"body": "<com:TSlider ID=\"${1:slider1}\" MinValue=\"${2:0}\" MaxValue=\"${3:100}\" AutoPostBack=\"${4:true}\" onValueChanged=\"${5:slider1ValueChanged}\" />\n",
+		"description": "TSlider",
+		"scope": "text.html"
+	},
+	"TStyleSheet": {
+		"prefix": "TStyleSheet",
+		"body": "<com:TStyleSheet StyleSheetUrl=\"${1:test.css}\">\n\t${2:<!-- insert content here or use StyleSheetUrl -->}\n</com:TStyleSheet>$0",
+		"description": "TStyleSheet",
+		"scope": "text.html"
+	},
+	"TTabPanel": {
+		"prefix": "TTabPanel",
+		"body": "<com:TTabPanel ID=\"${1:tabpanel1}\" ActiveViewIndex=\"${2:0}\">\n\t${3:<com:TTabView ID=\"${4:view1}\" Caption=\"${5:caption1}\">\n\t\t${6:<!-- view1 content -->}\n\t</com:TTabView>\n\t<com:TTabView ID=\"${7:view2}\" Caption=\"${8:caption2}\">\n\t\t${9:<!-- view2 content -->}\n\t</com:TTabView>}$0\n</com:TTabPanel>",
+		"description": "TTabPanel",
+		"scope": "text.html"
+	},
+	"TTabView": {
+		"prefix": "TTabView",
+		"body": "<com:TTabView ID=\"${1:view1}\" Caption=\"${2:caption1}\">\n\t${0:<!-- ${1} content -->}\n</com:TTabView>",
+		"description": "TTabView",
+		"scope": "text.html"
+	},
+	"TTableFooterRow": {
+		"prefix": "TTableFooterRow",
+		"body": "<com:TTableFooterRow>\n\t$0\n</com:TTableFooterRow>",
+		"description": "TTableFooterRow",
+		"scope": "text.html"
+	},
+	"TTable": {
+		"prefix": "TTable",
+		"body": "<com:TTable>\n\t${1:<com:TTableRow>\n\t\t<com:TTableHeaderCell Text=\"${2:header cell 1}\" />\n\t\t<com:TTableHeaderCell Text=\"${3:header cell 2}\" />\n\t</com:TTableRow>\n\t<com:TTableRow>\n\t\t<com:TTableCell>${4:cell 1}</com:TTableCell>\n\t\t<com:TTableCell>${5:cell 2}$0</com:TTableCell>\n\t</com:TTableRow>}\n</com:TTable>",
+		"description": "TTable",
+		"scope": "text.html"
+	},
+	"TTableCell": {
+		"prefix": "TTableCell",
+		"body": "<com:TTableCell>${1:cell 1}</com:TTableCell>$0",
+		"description": "TTableCell",
+		"scope": "text.html"
+	},
+	"TTableHeaderCell": {
+		"prefix": "TTableHeaderCell",
+		"body": "<com:TTableHeaderCell Text=\"${1:header text 1}\" />$0",
+		"description": "TTableHeaderCell",
+		"scope": "text.html"
+	},
+	"TTableHeaderRow": {
+		"prefix": "TTableHeaderRow",
+		"body": "<com:TTableHeaderRow>\n\t${1:<com:TTableHeaderCell Text=\"${2:header cell 1}\" />\n\t<com:TTableHeaderCell Text=\"${3:header cell 2}\" />}$0\n</com:TTableHeaderRow>",
+		"description": "TTableHeaderRow",
+		"scope": "text.html"
+	},
+	"TTableRow": {
+		"prefix": "TTableRow",
+		"body": "<com:TTableRow>\n\t${1:<com:TTableCell>${2:cell 1}</com:TTableCell>\n\t<com:TTableCell>${3:cell 2}</com:TTableCell>}$0\n</com:TTableRow>",
+		"description": "TTableRow",
+		"scope": "text.html"
+	},
+	"TTemplateColumn": {
+		"prefix": "TTemplateColumn",
+		"body": "<com:TTemplateColumn DataField=\"${2:Field Name from Data Source}\" HeaderText=\"${3:${2}}\">\n\t<prop:ItemTemplate>\n\t\t${4:<!-- content -->}\n\t</prop:ItemTemplate>\n\t<prop:EditItemTemplate>\n\t\t${5:<!-- content -->}\n\t</prop:EditItemTemplate>\n</com:TTemplateColumn>$0",
+		"description": "TTemplateColumn",
+		"scope": "text.html"
+	},
+	"TTextBox": {
+		"prefix": "TTextBox",
+		"body": "<com:TTextBox ID=\"${1:textbox1}\" />$0",
+		"description": "TTextBox",
+		"scope": "text.html"
+	},
+	"TTextHighlighter": {
+		"prefix": "TTextHighlighter",
+		"body": "<com:TTextHighlighter ShowLineNumbers=\"${1:true}\" Language=\"${2:PHP}\">\n\t${0:<!-- content -->}\n</com:TTextHighlighter>",
+		"description": "TTextHighlighter",
+		"scope": "text.html"
+	},
+	"TTimeTriggeredCallback": {
+		"prefix": "TTimeTriggeredCallback",
+		"body": "<com:TTimeTriggeredCallback Interval=\"${1:5}\" OnCallback=\"${2:time_callback}\" />",
+		"description": "TTimeTriggeredCallback",
+		"scope": "text.html"
+	},
+	"TValidationSummary": {
+		"prefix": "TValidationSummary",
+		"body": "<com:TValidationSummary\n\tHeaderText=\"${1:Validation error}\"\n\tDisplay=\"${2:Dynamic}\" />$0",
+		"description": "TValidationSummary",
+		"scope": "text.html"
+	},
+	"TValueTriggeredCallback": {
+		"prefix": "TValueTriggeredCallback",
+		"body": "<com:TValueTriggeredCallback ControlID=\"${1:ControlID}\" PropertyName=\"${2:value}\" OnCallback=\"${3:value_callback}\" />",
+		"description": "TValueTriggeredCallback",
+		"scope": "text.html"
+	},
+	"TView": {
+		"prefix": "TView",
+		"body": "<com:TView ID=\"${1:view1}\">\n\t${0:<!-- ${1} content -->}\n</com:TView>",
+		"description": "TView",
+		"scope": "text.html"
+	},
+	"TWizard": {
+		"prefix": "TWizard",
+		"body": "<com:TWizard>\n\t${1:<com:TWizardStep Title=\"${2:step 1}\" StepType=\"Start\">\n\t\t${3:content in step 1, may contain other controls}\n\t</com:TWizardStep>\n\t\n\t<com:TWizardStep Title=\"${4:step 2}\" StepType=\"Step\">\n\t\t${5:content in step 2, may contain other controls}\n\t</com:TWizardStep>\n\t\n\t<com:TWizardStep Title=\"${6:finish step}\" StepType=\"Finish\">\n\t\t${7:content in finish step, may contain other controls}\n\t</com:TWizardStep>}$0\n</com:TWizard>",
+		"description": "TWizard",
+		"scope": "text.html"
+	},
+	"TWizardStep": {
+		"prefix": "TWizardStep",
+		"body": "<com:TWizardStep Title=\"${1:step 1}\" StepType=\"${2:Step}\">\n\t$0\n</com:TWizardStep>",
+		"description": "TWizardStep",
+		"scope": "text.html"
+	}
+}
